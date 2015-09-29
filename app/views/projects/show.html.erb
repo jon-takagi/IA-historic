@@ -12,8 +12,8 @@
 </p>
 <p> <strong> Tasks: </strong>
   <ul>
-    <%for task in @project.tasks %>
-      <%= content_tag :li, task.description, class: "#{task.status}"%> : <%= task.status %>
+    <% @tasks.each do |task| %>
+    <%=content_tag("li", task.description, class: task.status)%>
     <% end %>
   </ul>
 </p>

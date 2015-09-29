@@ -1,5 +1,5 @@
 class Task < ActiveRecord::Base
-  enum status: {not_started: 1, in_progress: 2, need_help: 3, finished: 4}
+  enum status: [:not_started, :in_progress, :need_help, :finished]
   belongs_to :project
   belongs_to :user
   def self.status_attributes_for_select
