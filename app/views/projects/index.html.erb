@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<%= t :hello_world %>
+<h1>Listing Projects </h1>
+
+<% @projects.each do |project| %>
+<h4> <%= link_to project.name, project%> </h4>
+<h5> Success Conditions: </h5>
+<ul>
+  <% for succ_con in project.success_conditions %>
+  <li> <%= succ_con.description %> </li>
+  <% end %>
+</ul>
+<%= link_to 'Edit', edit_project_path(project) %>
+<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+
+<br>
+<br>
+<%= link_to 'New Project', new_project_path %>

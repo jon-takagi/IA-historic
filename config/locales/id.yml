@@ -1,0 +1,22 @@
+id:
+  hello_world: "Halo Dunia"
+  sign_in_with_google: "Masuk dengan Google"
+  sign_out: "Keluar"
+  id:
+  activerecord:
+    models:
+      project: "Proyek"
+      success_condition: "Kondisi Sukses"
+    attributes:
+      project:
+        name: "Nama"
+      success_condition:
+        description: "Diskripsi"
+    errors:
+      models:
+        project:
+          attributes:
+            name:
+              blank: "Proyek harus mengunakan judul"
+            success_conditions:
+              blank: "Proyek harus ada kondisi sukses"

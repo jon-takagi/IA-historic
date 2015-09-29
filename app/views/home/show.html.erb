@@ -1,0 +1,6 @@
+<h2> Task Management </h2>
+<% if current_user %>
+  <h2> Welcome, <%=current_user.name%> </h2>
+  <p> You can access the <%= link_to 'Projects', projects_path %> </p>
+<% end %>
+<%= t :hello_world %>

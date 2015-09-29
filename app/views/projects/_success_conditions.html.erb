@@ -1,0 +1,12 @@
+<h3> Success Conditions: </h3>
+<ul id="conditions">
+  <%= f.fields_for :success_conditions do |builder| %>
+    <li>
+      <%=builder.label :description, "Description" %>
+      <%=builder.text_field :description %>
+      <%=builder.hidden_field :_destroy %>
+      <%= link_to "remove", '#', :onclick => 'remove_fields(this)'%>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Add Success Conditions", '#', onclick: 'add_fields(this)' %> <br/>
