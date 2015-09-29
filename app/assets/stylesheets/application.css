@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+.not_started {
+  font-weight: bold;
+  color: red;
+}
+.in_progress {
+
+}
+.need_help {
+  font-style: italic;
+  color: orange;
+}
+.finished {
+  text-decoration: line-through;
+}
